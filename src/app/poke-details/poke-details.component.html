@@ -1,0 +1,15 @@
+details:
+
+<div class="" *ngIf="details">
+  <p style="color: white; background-color: black;">
+    name: {{details.name}}
+  </p>
+  <div class="">
+    abilities:
+    <ul>
+      <li class="hover" *ngFor="let ability of details.abilities">{{ability.ability.name}}</li>
+    </ul>
+  </div>
+  <img src="{{details.sprites.front_default}}" alt="" class="" style="width: 100%;">
+
+</div>

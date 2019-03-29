@@ -1,0 +1,9 @@
+<input [(ngModel)]="query" />
+<ul>
+  <li *ngFor="let pokemon of filteredList">
+    <!-- <a [routerLink]="pokemon.url.replace(/https:\/\/pokeapi\.co\/api\/v2\/pokemon/(1)\//, '$1')"> -->
+    <a [routerLink]="pokemon.url.split('/')[6]">
+      {{pokemon.name}}
+    </a>
+  </li>
+</ul>
